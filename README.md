@@ -8,7 +8,7 @@ The iOS and android app provides cards with questions and answers for learning. 
 
 To get started developing right away:
 
-* install all project dependencies with `yarn`
+* install all project dependencies with `yarn install`
 * start the development server with `yarn start`
 
 ## Tested With
