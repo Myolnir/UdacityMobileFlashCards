@@ -56,7 +56,7 @@ class Quiz extends Component {
     this.props.navigation.dispatch(NavigationActions.reset({
       index: 0,
       actions: [
-        NavigationActions.navigate({ routeName: 'Decks'})
+        NavigationActions.navigate({ routeName: 'Deck'})
       ]
     }))
     clearLocalNotification().
@@ -141,8 +141,8 @@ class Quiz extends Component {
               <ButtonGreen onPress={() => navigation.navigate('Quiz', { title: `${currentdeck.title} Quiz`, id: currentdeck.title, counter: 0 }) }>
                 <ButtonText>Start again</ButtonText>
               </ButtonGreen>
-              <Button onPress={() => this.finishQuiz()}>
-                <ButtonText>Show all Desks</ButtonText>
+              <Button onPress={() => navigation.navigate('Deck', { title: decks[currentdeck.title].title })}>
+                <ButtonText>Back to Deck</ButtonText>
               </Button>
             </GridBottom>
           </BlueLightView>
