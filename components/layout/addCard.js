@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { View } from 'react-native'
-import { MyKeyboardAvoidingView, MyTextInput, GridTop, GridBottom, BigBlueText, BlueLightView, Button, ButtonGreen, ButtonText } from '../components/styledComponents'
-import { createNewCard } from '../actions'
-import { addCardToDeck } from '../utils/api'
-import { gray, reddark } from '../utils/colors'
+import { MyKeyboardAvoidingView, MyTextInput, GridTop, GridBottom, BigBlueText, BlueLightView, Button, ButtonGreen, ButtonText } from '../styledComponents'
+import { createNewCard } from '../../actions'
+import { addCardToDeck } from '../../utils/api'
+import { gray, reddark } from '../../utils/colors'
 
 class addCard extends Component {
   state = {

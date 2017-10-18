@@ -10,10 +10,10 @@ import {
   ButtonText,
   GridTop,
   GridFooter
-} from '../components/styledComponents'
+} from '../styledComponents'
 import { Asset, AppLoading, Font } from 'expo';
-import { getDecks } from '../utils/api'
-import { receiveDecks } from '../actions'
+import { getDecks } from '../../utils/api'
+import { receiveDecks } from '../../actions'
 
 class Decks extends Component {
 
@@ -24,10 +24,10 @@ class Decks extends Component {
   async _GetInitialDataAndCacheResourcesAsync(dispatch) {
     await getDecks().then((decks) => dispatch(receiveDecks(decks)))
     await Font.loadAsync({
-      'source-sans-pro-light': require('../assets/fonts/SourceSansPro-Light.ttf'),
+      'source-sans-pro-light': require('../../assets/fonts/SourceSansPro-Light.ttf'),
     })
   }
-  
+
   render() {
     const { decks, navigation } = this.props
     if (!this.state.isReady) {

@@ -1,12 +1,12 @@
 import React, {Component} from 'react'
 import { ProgressViewIOS, Platform, ProgressBarAndroid } from 'react-native'
 import styled from 'styled-components/native'
-import { white, bluelight, blue, red, bluedark } from '../utils/colors'
+import { white, bluelight, blue, red, bluedark } from '../../utils/colors'
 import { connect } from 'react-redux'
-import { TextLink, GridTop, GridBottom, BigBlueText, SmallBlueText, BlueLightView, Button, ButtonGreen, ButtonText } from '../components/styledComponents'
-import { updateSuccess } from '../actions'
+import { TextLink, GridTop, GridBottom, BigBlueText, SmallBlueText, BlueLightView, Button, ButtonGreen, ButtonText } from '../styledComponents'
+import { updateSuccess } from '../../actions'
 import { NavigationActions } from 'react-navigation'
-import { clearLocalNotification, setLocalNotification } from '../utils/notifications'
+import { clearLocalNotification, setLocalNotification } from '../../utils/notifications'
 
 const ButtonRed = Button.extend`
   background-color: ${red};

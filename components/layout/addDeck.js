@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
 import { connect } from 'react-redux'
 import { View } from 'react-native'
-import { MyKeyboardAvoidingView, MyTextInput, GridTop, BigBlueText, BlueLightView, Button, ButtonGreen, ButtonText } from '../components/styledComponents'
-import { createNewDeck } from '../actions'
-import { gray, reddark } from '../utils/colors'
-import { saveDeckTitle } from '../utils/api'
+import { MyKeyboardAvoidingView, MyTextInput, GridTop, BigBlueText, BlueLightView, Button, ButtonGreen, ButtonText } from '../styledComponents'
+import { createNewDeck } from '../../actions'
+import { gray, reddark } from '../../utils/colors'
+import { saveDeckTitle } from '../../utils/api'
 import { NavigationActions} from 'react-navigation'
 
 class addDeck extends Component {
