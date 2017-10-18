@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import { connect } from 'react-redux'
 import { View } from 'react-native'
-import { MyKeyboardAvoidingView, MyTextInput, GridTop, BigBlueText, BlueLightView, Button, ButtonGreen, ButtonText } from '../styledComponents'
+import { MyKeyboardAvoidingView, MyTextInput, GridTop, BigBlueText, BlueLightView, Button, ButtonGreen, ButtonText } from '../common/styledComponents'
 import { createNewDeck } from '../../actions'
 import { gray, reddark } from '../../utils/colors'
 import { saveDeckTitle } from '../../utils/api'

@@ -1,6 +1,6 @@
 import { View, TouchableOpacity, Text, TextInput, KeyboardAvoidingView } from 'react-native'
 import styled from 'styled-components/native'
-import { gray, white, bluelight, blue, bluedark, bluegreendark } from '../utils/colors'
+import { gray, white, bluelight, blue, bluedark, bluegreendark } from '../../utils/colors'
 
 export const BlueView = styled.View`
   background-color: ${blue};

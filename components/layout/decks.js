@@ -10,7 +10,7 @@ import {
   ButtonText,
   GridTop,
   GridFooter
-} from '../styledComponents'
+} from '../common/styledComponents'
 import { Asset, AppLoading, Font } from 'expo';
 import { getDecks } from '../../utils/api'
 import { receiveDecks } from '../../actions'
